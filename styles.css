@@ -134,7 +134,7 @@ html {
 }
 
 /* ====================================
-   5. Csapat Oldal Stílusai
+   5. AlOldalak Stílusai
    ==================================== */
 /* Csapatfotók */
 .custom-bg-rozsaszin {
@@ -144,6 +144,11 @@ html {
 
 .custom-bg-teglaszin {
     background-color: rgb(217, 174, 139);
+    /* Téglaszínű háttér */
+}
+
+.custom-bg-vilagoszold {
+    background-color: rgb(156, 182, 74);
     /* Téglaszínű háttér */
 }
 
@@ -347,4 +352,17 @@ html {
     /* Hover: nagyítás */
     color: rgb(144, 36, 87);
     /* Hover: lila szín */
+}
+
+address {
+    font-style: normal; /* Az alapértelmezett dőlt stílus eltávolítása */
+    line-height: 1.5; /* Olvashatóság növelése */
+    color: rgb(50, 79, 25); /* Zöld szöveg */
+}
+address a {
+    text-decoration: none; /* Linkek aláhúzásának eltávolítása */
+    color: rgb(144, 36, 87); /* Lila linkek */
+}
+address a:hover {
+    text-decoration: underline; /* Aláhúzás hover alatt */
 }
