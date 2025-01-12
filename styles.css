@@ -1,0 +1,212 @@
+/* Görgetés simítása */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Belső képek reszponzív méretezése */
+.custom-image {
+    width: 100%;
+}
+
+/* Navigációs bár stílusa */
+.custom-nav-bar {
+    background-color: rgb(156, 182, 74); /* Egyedi zöld háttérszín */
+    padding: 10px 0; /* Térköz a navigációs elemek körül */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Árnyék */
+   }
+
+/* Navigációs linkek stílusa */
+.custom-nav-bar .nav-item {
+    margin: 0 15px; /* Térköz a linkek között */
+}
+
+.custom-nav-bar a {
+    font-family: "Verdana", sans-serif; /* Betűtípus */
+    font-size: 1.1rem; /* Betűméret */
+    font-weight: bold; /* Félkövér szöveg */
+    color:  rgb(50, 79, 25); /* zöld szöveg */
+    text-decoration: none; /* Aláhúzás eltávolítása */
+    transition: color 0.3s ease; /* Színváltozás animáció */
+}
+
+.custom-nav-bar a:hover {
+    color: rgb(144, 36, 87); /* Hover: lila szöveg */
+}
+
+/* Reszponzív igazítás */
+.custom-nav-bar .container {
+    display: flex;
+    flex-wrap: wrap; /* Linkek több sorba kerülhetnek kisebb kijelzőn */
+}
+
+
+/* Külső konténer (zöld keret) */
+.custom-outer-container {
+    background-color: rgb(133, 142, 62); /* Zöld háttér */
+    padding: 150px; /* Zöld keret mérete */
+    box-sizing: border-box; /* Paddinget beleszámolja a teljes méretbe */
+}
+
+/* Külső konténer (barna keret) */
+.custom-outer-container-onlybrown {
+    background-color: rgb(217, 189, 152); /* Zöld háttér */
+    padding: 150px; /* Zöld keret mérete */
+    box-sizing: border-box; /* Paddinget beleszámolja a teljes méretbe */
+}
+
+/* Belső konténer */
+.custom-inner-container {
+    background-color: rgb(217, 189, 152); /* Belső tartalom színe */
+    max-width: 1200px; /* Tartalom szélességkorlátozása */
+    margin: 0 auto; /* Középre igazítás */
+    padding: 0; /* Nincs belső padding */
+}
+
+/* Belső konténer barna */
+.custom-inner-container-onlybrown {
+    background-color: rgb(217, 189, 152); /* Belső tartalom színe */
+    max-width: 1200px; /* Tartalom szélességkorlátozása */
+    margin: 0 auto; /* Középre igazítás */
+    padding: 0; /* Nincs belső padding */
+}
+
+/* Fejléc blokk */
+.custom-header {
+    background-color: rgb(220, 214, 202); /* Fejléc blokk háttérszíne */
+    padding: 20px; /* Belső térköz */
+
+}
+
+/* Szlogen egyedi stílusa */
+.custom-slogan {
+    font-family: "Verdana", sans-serif; /* Egyedi betűtípus */
+    font-size: 1.5rem; /* Nagyobb betűméret */
+    font-weight: bold; /* Félkövér szöveg */
+    color: rgb(144, 36, 87); /* lila szövegszín */
+    text-align: right; /* Jobbra igazított */
+    margin: 0; /* Távolság eltávolítása */
+}
+
+
+/* Blokkok színei */
+.custom-bg-rozsaszin {
+    background-color: rgb(231, 196, 186);
+}
+
+.custom-bg-teglaszin {
+    background-color: rgb(217, 174, 139);
+}
+
+.custom-bg-beige {
+    background-color: rgb(201, 183, 166);
+}
+
+/* Külső konténer (zöld háttér) */
+.custom-outer-container {
+    background-color: rgb(133, 142, 62);
+    /* Külső zöld háttér */
+    padding: 50px;
+    /* 50px-es zöld keret */
+    min-height: 100vh;
+    /* Minimum magasság a teljes képernyőre */
+    box-sizing: border-box;
+    /* Padding számítása */
+}
+
+/* Belső konténer */
+.custom-inner-container {
+    background-color: rgb(217, 189, 152);
+    /* Belső tartalom színe */
+    padding: 0;
+    /* Belső margók eltávolítása */
+    max-width: 1200px;
+    /* Tartalom szélességkorlátozása */
+    margin: 0 auto;
+    /* Középre igazítás */
+}
+
+/* Felső banner */
+.custom-bannerfelso
+{
+background-color: rgb(220, 214, 202);
+/* Világos beige háttér */
+height: 150px;
+/* Egységes magasság */
+margin: 0;
+/* Margók eltávolítása */
+}
+
+/* Alsó banner */
+.custom-banneralso {
+    background-color: rgb(220, 214, 202);
+    /* Világos beige háttér */
+    height: 80px;
+    /* Egységes magasság */
+    margin: 0;
+    /* Margók eltávolítása */
+}
+
+/* Banneren belüli kép */
+.custom-bannerfelso img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Háromrészes blokk távolságok */
+.row.g-0 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Szövegek egyedi stílusa */
+.custom-text {
+    font-family: "Verdana", sans-serif;
+    /* Betűtípus */
+    font-size: 1.1rem;
+    /* Betűméret */
+    font-weight: bold;
+    /* Félkövér szöveg */
+    color: rgb(50, 79, 25);
+    /* Szöveg színe */
+    text-align: center;
+    /* Szöveg középre igazítása */
+}
+
+/* Link stílusa */
+.custom-link {
+    font-family: "Verdana", sans-serif; /* Betűtípus */
+    font-size: 1rem; /* Betűméret */
+    font-weight: bold; /* Félkövér szöveg */
+    color: rgb(50, 79, 25); /* Szöveg színe (zöld) */
+    text-decoration: none; /* Aláhúzás eltávolítása */
+    transition: color 0.3s ease; /* Színváltozás animáció */
+}
+
+.custom-link:hover {
+    color: rgb(144, 36, 87); /* Hover effekt szín (lila) */
+    text-decoration: underline; /* Hover alatt aláhúzás */
+}
+
+
+/* Jognyilatkozat stílusa */
+.custom-legal {
+    font-family: "Verdana", sans-serif; /* Betűtípus */
+    font-size: 0.9rem; /* Kis méret */
+    color: rgb(50, 79, 25); /* Zöld szövegszín */
+    margin: 0; /* Távolság eltávolítása */
+}
+
+/* Közösségi média ikonok stílusa */
+.custom-social-link {
+    margin-left: 15px; /* Térköz az ikonok között */
+    font-size: 1.5rem; /* Ikonok mérete */
+    color: rgb(50, 79, 25); /* Zöld ikon szín */
+    text-decoration: none; /* Aláhúzás eltávolítása */
+    transition: transform 0.3s ease, color 0.3s ease; /* Hover animáció */
+}
+
+.custom-social-link:hover {
+    transform: scale(1.2); /* Hover: Nagyítás */
+    color: rgb(144, 36, 87); /* Hover: Lila szín */
+}

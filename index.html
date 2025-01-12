@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>plant Sitters</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Saját CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 </head>
+
 <body>
-<!-- 
-    SZÍNEK
+    <!-- 
+SZÍNEK
 1. HÁTTÉR (főoldal) - RGB 217, 189, 152
 2. HÁTTÉR (aloldalak) - RGB 133, 142, 62
 3. MENÜSÁV (főoldal) - RGB 156, 182, 74
@@ -23,129 +32,258 @@ FONTOK:
 2. LOGO: DK MAGICAL BRUSH
 -->
 
-<!-- SZÖVEGEK:FŐOLDAL: -->
-Mi örömmel gondoskodunk a zöld családtagjaidról!
-FŐOLDAL
-CSAPATUNK
-SZOLGÁLTATÁSAINK
-NÖVÉNYEINK
-BLOG
-KAPCSOLAT
-
-<!-- CSAPATUNK: -->
-
-ISMERD MEG A CSAPATUNKAT!
-Zöldi Péter – A növénymágus
-Lelkes Róza – A dizájn és dekoráció mestere
-Világi Áron – A tech-varázslónk
 
 
-<!-- PÉTER ALOLDALA: -->
+    <!-- Logó és mottó -->
+    <div class="custom-outer-container">
+        <div class="custom-inner-container-onlybrown">
+            <div class="container mt-4 custom-header">
+                <div class="row align-items-end">
+                    <!-- Logó (bal oldalon) -->
+                    <div class="col-12 col-md-4 text-center text-md-start">
+                        <img src="KEPEK/nagy_logo.png" alt="Logó" class="img-fluid" style="max-width: 400px;">
+                    </div>
+                    <!-- Mottó (jobb oldalon) -->
+                    <div class="col-12 col-md-8 text-center text-md-end">
+                        <p class="custom-slogan">"Örömmel gondoskodunk a zöld családtagjaidról!"</p>
+                    </div>
+                </div>
+            </div>
 
-Zöldi Péter vagyok, a PLant Sitters alapítója és vezető növénygondozója
-Gyerekkorom óta a növények szerelmese vagyok. Emlékszem, ahogy a nagymamámmal a kertben dolgoztunk, és ő megtanított, hogyan éljek összhangban a természettel. Ezt a szenvedélyt szeretném megosztani másokkal is, ezért alapítottam meg a Plant-sittert.”
-Végzettségem: Növénybiológus és kertészmérnök (Budapesti Agrártudományi Egyetem)
-Hobbim: Szabadidőmben bonsaiokat nevelek és városi kertészeti workshopokat tartok.
-Különleges képességem, hogy képes vagyok életre kelteni szinte bármilyen „halottnak” tűnő növényt.
-Mottóm: „Hiszek benne, hogy a növények javítják az életminőségünket, és örömöt hoznak a mindennapjainkba.”
+            <div>
+                <!-- Navigációs mező -->
+                <nav id="navigation" class="custom-nav-bar">
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="nav-item"><a href="#home">FŐOLDAL</a></div>
+                        <div class="nav-item"><a href="#team">CSAPATUNK</a></div>
+                        <div class="nav-item"><a href="#services">SZOLGÁLTATÁSAINK</a></div>
+                        <div class="nav-item"><a href="#plants">NÖVÉNYEINK</a></div>
+                        <div class="nav-item"><a href="#blog">BLOG</a></div>
+                        <div class="nav-item"><a href="#contact">KAPCSOLAT</a></div>
+                    </div>
+                </nav>
+            </div>
 
-<!-- RÓZA ALOLDALA: -->
+            <div>
+                <img src="KEPEK/kep_szeles_nyitooldalra.jpg" alt="Enteriőr" class="img-fluid" style="max-width: 100%;">
+            </div>
 
-Lelkes Róza vagyok, dekorációs tanácsadó és növény-stylist
-Vallom, hogy a növények a társaink és egyben a lakberendezés szerves 
-részei is. Szenvedélyem, hogy velük a természetet kreatívan 
-beépítsem az otthonok és irodák belső tereibe.
-Végzettségem: Lakberendező és virágkötő. 
-Hobbim: Szeretek növénykompozíciókat készíteni, és rendszeresen 
-túrázom, hogy inspirációt gyűjtsek a természetből.
-Mottóm: „A növények nemcsak egészséget hoznak az otthonokba, 
-hanem stílust és karaktert is. Én ebben segítek az ügyfeleinknek.”
+            <div>
+                <div class="row custom-banneralso g-0">
+                    <!-- Jognyilatkozat (bal oldalon) -->
+                    <div class="col-12 col-md-6 d-flex justify-content-start align-items-center p-4">
+                        <p class="custom-legal">© 2025 Plant Sitters. Minden jog fenntartva.</p>
+                    </div>
 
-<!-- ÁRON ALOLDALA: -->
-
-Világi Áron vagyok. A technológia rajongójaként a csapatunkban én vagyok az ügyfélszolgálati koordinátor és digitális tanácsadó.
-Bár a technológia világából érkeztem, mindig is szerettem a természetet. A Plant Sitters csapatában azt a küldetést kaptam, hogy az emberek növényeinek gondozását kényelmesebbé és hatékonyabbá tegyem digitális megoldásokkal.
-Végzettségem: IT szakember és környezetvédelmi technikus
-Hobbim: Beltéri hidroponikus rendszereket építek, és imádom a sci-fi filmeket és könyveket.
-Különleges képességem, hogy gyors megoldásokat találok a növényeid problémáira online tanácsadás formájában.
-Mottóm: „Az én feladatom az, hogy a technológia segítségével minél több emberhez eljuttassuk a növénygondozás örömét.”
-
-<!-- SZOLGÁLTATÁSAINK: -->
-
-GONDOSKODUNK ÉS TERVEZÜNK
-PLANT-HOSTEL ÉS NÖVÉNYVENDÉGEK>>>
-GONDOSKODÁS>>>
-TANÁCSADÁS ÉS TERVEZÉS>>>
-
-<!-- PLANT-HOSTEL ÉS NÖVÉNYVENDÉGEK ALOLDALA: -->
-
-PLANT-HOSTEL SZOLGÁLTATÁSUNK:
-Úgy tervezed, hogy hosszabb ideig nem tudsz a lakásodban vagy irodádban élő zöld társaidról gondoskodni, de nincs lehetőséged arra, hogy a csapatunk a helyszínen segítsen neked?
-A PlantHostel szolgáltatásunkat pont ennek megoldására találtuk ki! Gondos fényképes leltárkészítést követően a kertészetünkbe szállítjuk a növényeidet és vendégül látjuk őket, amíg távol leszel tőlük.
-Minden hozzánk kerülő növényt gondosan megvizsgálunk, és ha szükségét látjuk, akkor megszabadulunk a kártevőitől. Mivel fontos számunkra, hogy minden gazda egészségesen lássa viszont a gondjainkra bízott cserepes társait, a kertészetben minden növénycsapatnak szeparált helyet biztosítunk.
-Igény szerint SPA szolgáltatásunkat is megrendelheted, így teljes pompájukban, átültetve, szükség szerint karózva vagy megmetszve, tápanyagokkal jóllakatva térnak majd vissza hozzád.
-PLANT-SPA SZOLGÁLTATÁSUNK TARTALMA:
-- átültetés a fajtának legmegfelelőbb ültetőközegbe
-- mohakaróval gondoskodunk a stabilitásáról
-- szükség szerint megmetszéssel frissítjük a növényt
-- növénydoktorunk javaslatai alapján pótoljuk a hiányzó tápanyagokat
-
-NÖVÉNYVENDÉGEK:
-Imádod a növényeket és szíved szerint az összeset beszereznéd, hogy közelről csodálhasd őket, de nincs ehhez elég helyed?
-Fontos neked a változatosság, szíves szerint pár havonta teljesen újradekorálnád a lakásodat?
-Akkor ezt a szolgáltatásunkat neked találtuk ki! Előre megbeszélt rendszerességgel meglátogatunk, és kicseréjük a növényeidet a kertészetünkben gondozott példányokra. 
-Akár hagynád magad meglepni, akár meglátogatsz bennünket és te magad nézed ki az új vendégeket, mi bármiben támogatunk.
-
-<!-- NÖVÉNYEINK: -->
-
-POZSGÁSOK
-KAKTUSZOK
-STATEMENT DARABOK
-APRÓ CSODÁK
-FÉNYIMÁDÓK
-ÁRNYÉKTŰRŐK
+                    <!-- Közösségi média ikonok (jobb oldalon) -->
+                    <div class="col-12 col-md-6 d-flex justify-content-end align-items-center p-4">
+                        <a href="https://www.facebook.com" target="_blank" class="custom-social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="custom-social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" class="custom-social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-<!-- GONDOSKODÁS ALOLDALA:
+
+
+
+    <!-- CSAPATUNK: -->
+    <section id="team">
+
+        <!-- Külső zöld konténer -->
+        <div class="custom-outer-container">
+            <!-- Belső tartalom -->
+            <div class="custom-inner-container">
+                <!-- Teljes szélességű felső banner -->
+                <div class="row custom-bannerfelso g-0">
+                    <div class="col-12 d-flex justify-content-center align-items-center p-4">
+                        <img src="KEPEK/banner_ismerd_meg_a_csapatot.png" alt="ISMERD MEG A CSAPATOT" class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- Három részre bontott sor -->
+                <div class="row g-0">
+                    <!-- Bal oszlop -->
+                    <div class="col-md-4 custom-bg-rozsaszin d-flex flex-column align-items-center p-3">
+                        <img src="KEPEK/csapatunk_Peter.jpg" alt="Zöldi Péter" class="img-fluid"
+                            style="max-width: 80%; margin-bottom: 1rem;">
+                        <p class="text-center custom-text">Zöldi Péter – A növénymágus</p>
+                    </div>
+
+                    <!-- Középső oszlop -->
+                    <div class="col-md-4 custom-bg-teglaszin d-flex flex-column align-items-center p-3">
+                        <img src="KEPEK/csapatunk_Roza.jpg" alt="Lelkes Róza" class="img-fluid"
+                            style="max-width: 80%; margin-bottom: 1rem;">
+                        <p class="text-center custom-text">Lelkes Róza – A dizájn és dekoráció mestere</p>
+                    </div>
+
+                    <!-- Jobb oszlop -->
+                    <div class="col-md-4 custom-bg-beige d-flex flex-column align-items-center p-3">
+                        <img src="KEPEK/csapatunk_Aron.jpg" alt="Világi Áron" class="img-fluid"
+                            style="max-width: 80%; margin-bottom: 1rem;">
+                        <p class="text-center custom-text">Világi Áron – A tech-varázslónk</p>
+                    </div>
+                </div>
+
+                <!-- Teljes szélességű alsó banner -->
+                <div class="row custom-banneralso g-0">
+                    <div class="col-12 d-flex justify-content-center align-items-center p-4">
+                        <a href="#navigation" class="custom-link">VISSZA A NAVIGÁCIÓHOZ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PÉTER ALOLDALA: -->
+    <section id="peter">
+        Zöldi Péter vagyok, a PLant Sitters alapítója és vezető növénygondozója
+        Gyerekkorom óta a növények szerelmese vagyok. Emlékszem, ahogy a nagymamámmal a kertben dolgoztunk, és ő
+        megtanított, hogyan éljek összhangban a természettel. Ezt a szenvedélyt szeretném megosztani másokkal is,
+        ezért
+        alapítottam meg a Plant-sittert.”
+        Végzettségem: Növénybiológus és kertészmérnök (Budapesti Agrártudományi Egyetem)
+        Hobbim: Szabadidőmben bonsaiokat nevelek és városi kertészeti workshopokat tartok.
+        Különleges képességem, hogy képes vagyok életre kelteni szinte bármilyen „halottnak” tűnő növényt.
+        Mottóm: „Hiszek benne, hogy a növények javítják az életminőségünket, és örömöt hoznak a mindennapjainkba.”
+    </section>
+
+    <!-- RÓZA ALOLDALA: -->
+
+    Lelkes Róza vagyok, dekorációs tanácsadó és növény-stylist
+    Vallom, hogy a növények a társaink és egyben a lakberendezés szerves
+    részei is. Szenvedélyem, hogy velük a természetet kreatívan
+    beépítsem az otthonok és irodák belső tereibe.
+    Végzettségem: Lakberendező és virágkötő.
+    Hobbim: Szeretek növénykompozíciókat készíteni, és rendszeresen
+    túrázom, hogy inspirációt gyűjtsek a természetből.
+    Mottóm: „A növények nemcsak egészséget hoznak az otthonokba,
+    hanem stílust és karaktert is. Én ebben segítek az ügyfeleinknek.”
+
+    <!-- ÁRON ALOLDALA: -->
+
+    Világi Áron vagyok. A technológia rajongójaként a csapatunkban én vagyok az ügyfélszolgálati koordinátor és
+    digitális tanácsadó.
+    Bár a technológia világából érkeztem, mindig is szerettem a természetet. A Plant Sitters csapatában azt a
+    küldetést
+    kaptam, hogy az emberek növényeinek gondozását kényelmesebbé és hatékonyabbá tegyem digitális megoldásokkal.
+    Végzettségem: IT szakember és környezetvédelmi technikus
+    Hobbim: Beltéri hidroponikus rendszereket építek, és imádom a sci-fi filmeket és könyveket.
+    Különleges képességem, hogy gyors megoldásokat találok a növényeid problémáira online tanácsadás formájában.
+    Mottóm: „Az én feladatom az, hogy a technológia segítségével minél több emberhez eljuttassuk a növénygondozás
+    örömét.”
+
+    <!-- SZOLGÁLTATÁSAINK: -->
+
+    GONDOSKODUNK ÉS TERVEZÜNK
+    PLANT-HOSTEL ÉS NÖVÉNYVENDÉGEK>>>
+    GONDOSKODÁS>>>
+    TANÁCSADÁS ÉS TERVEZÉS>>>
+
+    <!-- PLANT-HOSTEL ÉS NÖVÉNYVENDÉGEK ALOLDALA: -->
+
+    PLANT-HOSTEL SZOLGÁLTATÁSUNK:
+    Úgy tervezed, hogy hosszabb ideig nem tudsz a lakásodban vagy irodádban élő zöld társaidról gondoskodni, de
+    nincs
+    lehetőséged arra, hogy a csapatunk a helyszínen segítsen neked?
+    A PlantHostel szolgáltatásunkat pont ennek megoldására találtuk ki! Gondos fényképes leltárkészítést követően a
+    kertészetünkbe szállítjuk a növényeidet és vendégül látjuk őket, amíg távol leszel tőlük.
+    Minden hozzánk kerülő növényt gondosan megvizsgálunk, és ha szükségét látjuk, akkor megszabadulunk a
+    kártevőitől.
+    Mivel fontos számunkra, hogy minden gazda egészségesen lássa viszont a gondjainkra bízott cserepes társait, a
+    kertészetben minden növénycsapatnak szeparált helyet biztosítunk.
+    Igény szerint SPA szolgáltatásunkat is megrendelheted, így teljes pompájukban, átültetve, szükség szerint
+    karózva
+    vagy megmetszve, tápanyagokkal jóllakatva térnak majd vissza hozzád.
+    PLANT-SPA SZOLGÁLTATÁSUNK TARTALMA:
+    - átültetés a fajtának legmegfelelőbb ültetőközegbe
+    - mohakaróval gondoskodunk a stabilitásáról
+    - szükség szerint megmetszéssel frissítjük a növényt
+    - növénydoktorunk javaslatai alapján pótoljuk a hiányzó tápanyagokat
+
+    NÖVÉNYVENDÉGEK:
+    Imádod a növényeket és szíved szerint az összeset beszereznéd, hogy közelről csodálhasd őket, de nincs ehhez
+    elég
+    helyed?
+    Fontos neked a változatosság, szíves szerint pár havonta teljesen újradekorálnád a lakásodat?
+    Akkor ezt a szolgáltatásunkat neked találtuk ki! Előre megbeszélt rendszerességgel meglátogatunk, és kicseréjük
+    a
+    növényeidet a kertészetünkben gondozott példányokra.
+    Akár hagynád magad meglepni, akár meglátogatsz bennünket és te magad nézed ki az új vendégeket, mi bármiben
+    támogatunk.
+
+    <!-- NÖVÉNYEINK: -->
+
+    POZSGÁSOK
+    KAKTUSZOK
+    STATEMENT DARABOK
+    APRÓ CSODÁK
+    FÉNYIMÁDÓK
+    ÁRNYÉKTŰRŐK
+
+
+    <!-- GONDOSKODÁS ALOLDALA:
 (lista) 
 -->
 
-MINDEN TŐLÜNK TELHETŐT MEGTESZÜNK A NÖVÉNYEIDÉRT:
-- házhoz megyünk és minden szükséges eszközt magunkkal viszünk minden alkalommal
-- öntözési tervet készítünk, és a valódi igények szerint tervezzük meg a látogatásainkat
-- évszakonként ellenőrizzük a fény- és páraviszonyokat, és szükség szerint kiegészítő eszközökről is gondoskodunk, ha erre engedélyt adsz nekünk
-- ismerjük minden beltéri nevelésben felbukkanó növény igényeit, és csak a legjobb minőségű tápanyagokkal kényeztetjük őket.
-- a növények metszésében, fiatalításában is örömmel segítünk neked
+    MINDEN TŐLÜNK TELHETŐT MEGTESZÜNK A NÖVÉNYEIDÉRT:
+    - házhoz megyünk és minden szükséges eszközt magunkkal viszünk minden alkalommal
+    - öntözési tervet készítünk, és a valódi igények szerint tervezzük meg a látogatásainkat
+    - évszakonként ellenőrizzük a fény- és páraviszonyokat, és szükség szerint kiegészítő eszközökről is
+    gondoskodunk,
+    ha erre engedélyt adsz nekünk
+    - ismerjük minden beltéri nevelésben felbukkanó növény igényeit, és csak a legjobb minőségű tápanyagokkal
+    kényeztetjük őket.
+    - a növények metszésében, fiatalításában is örömmel segítünk neked
 
-TANÁCSADÁS ÉS TERVEZÉS ALOLDALA:
-- Tudjuk, hogy ahány ember és ahány helyszín, annyi igény merülhet fel. Amikor az otthonok és munkahelyek zöldítéséről gondolkodunk, először egy személyes beszélgetés során igyekszünk megismerni a szempontjaidat és kívánságaidat. 
-- Ahhoz, hogy lássuk, milyen eszközökkel tudjuk megvalósítani az álmaidat, aprólékosan fel kell mérnünk a növényeid leendő lakóhelyét.
-Modern mérőeszközeinkkel rögzítjük a fény és páraadatokat, megvizsgáljuk a várható légáramlások mértékét, és az adatok alapján átgondoljuk, hogy a vágyott növények igényeihez hogyan illeszkedik a rendelkezésre álló tér.
-- Előfordul, hogy a növény és az ingatlan első ránézésre nem a legjobb páros, de erre is lesznek ötleteink. Esztétikus és alacsony fogyasztású növénylámpáink, páravitrinjeink és párásító gépeink segítségével a legtöbb igényt ki tudjuk elégíteni.
-- Olyan kéréssel is sokszor találkozunk, hogy nincs konkrét elképzelése a leendő gazdának, ilyenkor segítünk megtalálni a hozzá legjobban illő növénytársakat.
-Kollégánk az ingatlan stílusához és fényviszonyaihoz illeszkedő javaslatokkal segít a döntésben.
+    TANÁCSADÁS ÉS TERVEZÉS ALOLDALA:
+    - Tudjuk, hogy ahány ember és ahány helyszín, annyi igény merülhet fel. Amikor az otthonok és munkahelyek
+    zöldítéséről gondolkodunk, először egy személyes beszélgetés során igyekszünk megismerni a szempontjaidat és
+    kívánságaidat.
+    - Ahhoz, hogy lássuk, milyen eszközökkel tudjuk megvalósítani az álmaidat, aprólékosan fel kell mérnünk a
+    növényeid
+    leendő lakóhelyét.
+    Modern mérőeszközeinkkel rögzítjük a fény és páraadatokat, megvizsgáljuk a várható légáramlások mértékét, és az
+    adatok alapján átgondoljuk, hogy a vágyott növények igényeihez hogyan illeszkedik a rendelkezésre álló tér.
+    - Előfordul, hogy a növény és az ingatlan első ránézésre nem a legjobb páros, de erre is lesznek ötleteink.
+    Esztétikus és alacsony fogyasztású növénylámpáink, páravitrinjeink és párásító gépeink segítségével a legtöbb
+    igényt
+    ki tudjuk elégíteni.
+    - Olyan kéréssel is sokszor találkozunk, hogy nincs konkrét elképzelése a leendő gazdának, ilyenkor segítünk
+    megtalálni a hozzá legjobban illő növénytársakat.
+    Kollégánk az ingatlan stílusához és fényviszonyaihoz illeszkedő javaslatokkal segít a döntésben.
 
 
-<!-- 
+    <!-- 
 BLOG:
 work in progress 
 -->
 
 
-<!-- KAPCSOLAT: -->
+    <!-- KAPCSOLAT: -->
 
-Elérhetőségeink: 
-Budapest, Tündér utca 13., 1125 Budapest
-info@plant-sitters.hu
-+36 1 1234567, +36 80 1234567
+    Elérhetőségeink:
+    Budapest, Tündér utca 13., 1125 Budapest
+    info@plant-sitters.hu
+    +36 1 1234567, +36 80 1234567
 
-Küldj üzenetet:
-<!-- (űrlap helye) -->
+    Küldj üzenetet:
+    <!-- (űrlap helye) -->
 
 
-Kövess bennünket:
-<!-- (kattintható logók helye) -->
+    Kövess bennünket:
+    <!-- (kattintható logók helye) -->
 
 
 </body>
+
 </html>
