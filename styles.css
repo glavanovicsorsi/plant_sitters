@@ -408,3 +408,25 @@ figcaption {
     white-space: nowrap;
     border: 0;
 }
+
+.blog-header {
+    width: 100%;
+    height: 500px; /* A magasság megegyezik a kép magasságával */
+    background-image: url('KEPEK/blog_fejlec.jpg'); /* Kép útvonala */
+    background-size: cover; /* A kép teljesen kitölti a területet */
+    background-position: center; /* A kép középre igazítása */
+    display: flex; /* Flexbox a szövegek elhelyezéséhez */
+    flex-direction: column; /* A szövegek egymás alá kerülnek */
+    justify-content: center; /* A szövegek függőlegesen középre kerülnek */
+    align-items: center; /* A szövegek vízszintesen középre kerülnek */
+    color: white; /* A szöveg színe */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Szöveg árnyékolása az olvashatóságért */
+}
+.blog-title {
+    font-size: 3rem; /* Főcím mérete */
+    margin: 0;
+}
+.blog-subtitle {
+    font-size: 1.5rem; /* Alcím mérete */
+    margin: 0;
+}
