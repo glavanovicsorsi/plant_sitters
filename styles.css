@@ -53,16 +53,13 @@ html {
 /* ====================================
    3. Konténerek és Háttérszínek
    ==================================== */
-.custom-outer-container {
-    background-color: rgb(133, 142, 62);
-    /* Külső zöld háttér */
-    padding: 50px;
-    /* 50px-es zöld keret */
-    min-height: 100vh;
-    /* Minimum magasság a teljes képernyőre */
-    box-sizing: border-box;
-    /* Padding számítása */
+   .custom-outer-container {
+    background-color: rgb(133, 142, 62); /* Külső zöld háttér */
+    padding: 20px 50px; /* Felül és alul: 20px, bal és jobb: 50px */
+    
+    box-sizing: border-box; /* Padding számítása */
 }
+
 
 .custom-outer-container-onlybrown {
     background-color: rgb(217, 189, 152);
@@ -365,4 +362,49 @@ address a {
 }
 address a:hover {
     text-decoration: underline; /* Aláhúzás hover alatt */
+}
+
+/* Térkép és cím szakasz */
+.custom-bg-lightgreen {
+    background-color: rgb(231, 246, 221); /* Világoszöld háttér */
+    color: rgb(50, 79, 25); /* Zöld szöveg */
+    font-family: "Verdana", sans-serif;
+    text-align: center;
+}
+
+.custom-bg-lightgreen address {
+    font-style: normal; /* Normál betűstílus */
+    line-height: 1.5; /* Olvashatóság növelése */
+}
+
+.custom-bg-lightgreen a {
+    color: rgb(144, 36, 87); /* Lila linkek */
+    text-decoration: none; /* Aláhúzás eltávolítása */
+}
+
+.custom-bg-lightgreen a:hover {
+    text-decoration: underline; /* Hover alatt aláhúzás */
+}
+.custom-bg-beige h4 {
+    margin-bottom: 10px; /* Térköz a cím alatt */
+    font-family: "Verdana", sans-serif;
+    color: rgb(50, 79, 25); /* Zöld szöveg */
+}
+
+.custom-bg-beige address {
+    font-style: normal; /* Normál betűstílus */
+    line-height: 1.5; /* Sorok közötti térköz */
+    font-family: "Verdana", sans-serif;
+    color: rgb(50, 79, 25); /* Zöld szöveg */
+}
+
+figcaption {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
